@@ -6,12 +6,12 @@ Predict the operating condition of 14,850 unlabelled waterpoints given a labelle
 A full description from Driven Data can be found [here](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/25/).
 <br/>
 <br/>
-<br/>
+
 ### Datasets
 The rules of the competition prohibit the publication of the data by third parties, though you can find the problem description at Driven Data using this [link](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/25/). Once you log in or create an account you can then gain access to the datasets.
 <br/>
 <br/>
-<br/>
+
 ### Workflow of notebooks
 1. The `EDA_clean.ipynb` notebook contains plots and steps taken to clean the data. Some values are also imputed. Please note that several functions used in this notebook have been stored in `imputing_functions.py` in order to declutter the notebook. The data is then exported as a .csv file. 
 
@@ -20,7 +20,7 @@ The rules of the competition prohibit the publication of the data by third parti
 3. `eval_catboost.ipyng` and  `eval_rf.ipynb` export a .csv file in the format required by the competition. They both require that the evaluation dataset provided by Driven Data be cleaned with `EDA_clean.ipynb`. The evaluation dataset does not include labels, as these are stored internally at Driven Data and are used to calculate the accuarcy submitted models.
 <br/>
 <br/>
-<br/>
+
 ### Notes
 Currently, the Random Forest model performs better on the training dataset but significantly worse during evaluation compared to the CatBoost model. 
 
