@@ -17,7 +17,7 @@ The rules of the competition prohibit the publication of the data by third parti
 
 2. `train_catboost.ipynb` and `train_rf.ipynb` import the .csv file from  `EDA_clean.ipynb` and train a Catboost and Random Forest model, respectively.
 
-3. `eval_catboost.ipyng` and  `eval_rf.ipynb` export a .csv file in the format required by the competition. They both require that the evaluation dataset provided by Driven Data be cleaned with `EDA_clean.ipynb`. The evaluation dataset does not include labels, as these are stored internally at Driven Data and are used to calculate the accuarcy submitted models.
+3. `eval_catboost.ipynb` and  `eval_rf.ipynb` export a .csv file in the format required by the competition. They both require that the evaluation dataset provided by Driven Data be cleaned with `EDA_clean.ipynb`. The evaluation dataset does not include labels, as these are stored internally at Driven Data and are used to calculate the accuarcy submitted models.
 <br/>
 <br/>
 
