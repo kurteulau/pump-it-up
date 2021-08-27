@@ -17,7 +17,7 @@
     <div
     class="p-5 text-center bg-image"
     style="
-      background-image: url('https://s3.amazonaws.com/drivendata-public-assets/pumping.jpg');
+      background-image: url('img/pumping.jpg');
       height: 400px;
       margin-top: 58px;">
     <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
@@ -36,6 +36,13 @@
         <br><br>
         <h2>Datasets</h2>
         <p>The rules of the competition prohibit the publication of the data by third parties, though you can find the problem description at Driven Data using this <a href="" style="color: #2980B9">link</a>. Once you log in or create an account you can then gain access to the datasets.</p>
+        <br><br>
+        <h2>Workflow of notebooks</h2>
+        <ol>
+            <li>The <code>EDA_clean.ipynb</code> notebook contains plots and steps taken to clean the data. Some values are also imputed. Please note that several functions used in this notebook have been stored in <code>imputing_functions.py</code> in order to declutter the notebook. The data is then exported as a .csv file.</li>
+            <li><code>train_catboost.ipynb</code> and <code>train_rf.ipynb</code> import the .csv file from <code>EDA_clean.ipynb</code> and train a Catboost and Random Forest model, respectively.</li>
+            <li><code>eval_catboost.ipynb</code> and <code>eval_rf.ipynb</code> export a .csv file in the format required by the competition. They both require that the evaluation dataset provided by Driven Data be cleaned with <code>EDA_clean.ipynb</code>. The evaluation dataset does not include labels, as these are stored internally at Driven Data and are used to calculate the accuarcy submitted models.</li>
+        </ol>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
