@@ -6,29 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-package/favicon.ico">
     <title>Pump It Up</title>
+  </head>
   
-  
-  <body>  
+  <body> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>         
     <div class="top-bar">
-        <div class="container">
-            <div class="col-12 text-right">
-                <p><a href="https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/25/">Driven Data</a></p>
-            </div>
+    <div
+    class="p-5 text-center bg-image"
+    style="
+      background-image: url('https://s3.amazonaws.com/drivendata-public-assets/pumping.jpg');
+      height: 400px;
+      margin-top: 58px;">
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="text-white">
+          <h1 class="mb-3">Pump It Up</h1>
         </div>
+      </div>
     </div>
-    <div class="nav navbar bg-dark navbar-dark navbar-expand-lg">
-        <div class="container">
-            <a href="index.html" class="navbar-brand"><img src="img/favicon-package/favicon.ico"></a>
-        </div>
     </div>
-    <h1>Pump It Up</h1>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <br><hr><br>
+    <div class="container">
+        <h2>Problem Description</h2>  
+        <p>Predict the operating condition of 14,850 unlabelled waterpoints given a labelled dataset of 54,900 waterpoints. Features in the labelled dataset include characteristics such as the location, installer, construction year, and type of well. This provided dataset has missing and incorrect values. This project is an entry in the Pump It Up competition held by Driven Data.</p>
+        <p>A full description from Driven Data can be found <a href="https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/25/" style="color: #2980B9">here</a>.</p>
+        <br><br>
+        <h2>Datasets</h2>
+        <p>The rules of the competition prohibit the publication of the data by third parties, though you can find the problem description at Driven Data using this <a href="" style="color: #2980B9">link</a>. Once you log in or create an account you can then gain access to the datasets.</p>
+    </div>
   </body>
 </html>
