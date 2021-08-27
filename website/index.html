@@ -1,18 +1,15 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link href="style.css" rel="stylesheet" >
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-package/favicon.ico">
     <title>Pump It Up</title>
   </head>
   
-  <body> 
-             
+  <body>   
     <div class="top-bar">
     <div
     class="p-5 text-center bg-image"
@@ -31,17 +28,17 @@
     <br><hr class="style1"><br>
     <div class="container">
         <h2>Problem Description</h2>  
-        <p>Predict the operating condition of 14,850 unlabelled waterpoints given a labelled dataset of 54,900 waterpoints. Features in the labelled dataset include characteristics such as the location, installer, construction year, and type of well. This provided dataset has missing and incorrect values. This project is an entry in the Pump It Up competition held by Driven Data.</p>
+        <p class="style1">Predict the operating condition of 14,850 unlabelled waterpoints given a labelled dataset of 54,900 waterpoints. Features in the labelled dataset include characteristics such as the location, installer, construction year, and type of well. This provided dataset has missing and incorrect values. This project is an entry in the Pump It Up competition held by Driven Data.</p>
         <p>A full description from Driven Data can be found <a href="https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/25/" style="color: #2980B9">here</a>.</p>
         <br><br>
         <h2>Datasets</h2>
-        <p>The rules of the competition prohibit the publication of the data by third parties, though you can find the problem description at Driven Data using this <a href="" style="color: #2980B9">link</a>. Once you log in or create an account you can then gain access to the datasets.</p>
+        <p class="style1">The rules of the competition prohibit the publication of the data by third parties, though you can find the problem description at Driven Data using this <a href="" style="color: #2980B9">link</a>. Once you log in or create an account you can then gain access to the datasets.</p>
         <br><br>
         <h2>Workflow of notebooks</h2>
         <ol>
-            <li>The <code>EDA_clean.ipynb</code> notebook contains plots and steps taken to clean the data. Some values are also imputed. Please note that several functions used in this notebook have been stored in <code>imputing_functions.py</code> in order to declutter the notebook. The data is then exported as a .csv file.</li>
-            <li><code>train_catboost.ipynb</code> and <code>train_rf.ipynb</code> import the .csv file from <code>EDA_clean.ipynb</code> and train a Catboost and Random Forest model, respectively.</li>
-            <li><code>eval_catboost.ipynb</code> and <code>eval_rf.ipynb</code> export a .csv file in the format required by the competition. They both require that the evaluation dataset provided by Driven Data be cleaned with <code>EDA_clean.ipynb</code>. The evaluation dataset does not include labels, as these are stored internally at Driven Data and are used to calculate the accuarcy submitted models.</li>
+            <li class="style1">The <code>EDA_clean.ipynb</code> notebook contains plots and steps taken to clean the data. Some values are also imputed. Please note that several functions used in this notebook have been stored in <code>imputing_functions.py</code> in order to declutter the notebook. The data is then exported as a .csv file.</li>
+            <li class="style1"><code>train_catboost.ipynb</code> and <code>train_rf.ipynb</code> import the .csv file from <code>EDA_clean.ipynb</code> and train a Catboost and Random Forest model, respectively.</li>
+            <li class="style1"><code>eval_catboost.ipynb</code> and <code>eval_rf.ipynb</code> export a .csv file in the format required by the competition. They both require that the evaluation dataset provided by Driven Data be cleaned with <code>EDA_clean.ipynb</code>. The evaluation dataset does not include labels, as these are stored internally at Driven Data and are used to calculate the accuarcy submitted models.</li>
         </ol>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
