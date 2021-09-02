@@ -1,3 +1,5 @@
+# Pump It Up
+
 ![alt text](https://s3.amazonaws.com/drivendata-public-assets/pumping.jpg 'Competition image')
 
 ### Problem Description
