@@ -31,6 +31,7 @@ I have used GridSearchCV on both Random Forest and CatBoost models to tune hyper
 Next steps (when I have the time) could include:
 * better imputation of missing data, especially construction year, population, and other numerical features
 * using regular expressions to match funders and installers rather than just forcing all to lower case and removing double speaces
-* assessing the reasons for the Random Forest model to do well in training and then lose around 18% accuracy during evaluation,despite the use of cross-validation, stratifying duing train_test_split
+* assessing the reasons for the Random Forest model to do well in training and then losing around 18% accuracy during evaluation, despite the use of cross-validation and stratifying duing train_test_split
+* incorporat ensemble method to increase accuracy
 
 
