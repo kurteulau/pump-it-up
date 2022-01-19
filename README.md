@@ -1,6 +1,5 @@
 # Pump It Up
-
-![alt text](./website/img/pump.jpg 'Hand pump')
+<img src="./website/img/pump.jpg" alt="drawing" width="50%"/>
 
 ### Problem Description
 Predict the operating condition of 14,850 unlabelled waterpoints given a labelled dataset of 54,900 waterpoints. Features in the labelled dataset include characteristics such as the location, installer, construction year, and type of well. This provided dataset has missing and incorrect values.  This project is an entry in the Pump It Up competition held by Driven Data.
